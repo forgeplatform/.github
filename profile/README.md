@@ -26,7 +26,7 @@ AWX is a great foundation but has accumulated legacy patterns over years of stew
 | Policy | None built-in | **OPA (Open Policy Agent) integration** |
 | IaC scanning | None | **Native Terraform/CloudFormation scanning** |
 | Multi-tenancy | Organizations only | **Hard tenant isolation, per-tenant resource quotas** |
-| AI | None | **Embedded AI assistant (Ollama + ChromaDB, fully self-hosted)** |
+| AI | None | **Embedded AI assistant (Ollama + ChromaDB, self-hosted)** — *⚠️ preview, in active development* |
 
 ---
 
@@ -61,10 +61,14 @@ AWX is a great foundation but has accumulated legacy patterns over years of stew
 - **IaC scanning** — Terraform, CloudFormation, Pulumi static analysis with [Checkov](https://github.com/bridgecrewio/checkov) integration
 - **Event-driven automation** — webhook receivers trigger jobs from external systems
 
-### 🤖 AI Assistant (optional)
-- **Fully self-hosted** AI assistant — runs Ollama + ChromaDB embedded in a single container
+### 🤖 AI Assistant (optional, preview)
+
+> ⚠️ **The AI Assistant is under active development and is not yet production-ready.** It is shipped as a preview for early feedback. APIs, models, and capabilities may change between releases. Do **not** depend on it for critical workflows yet.
+
+- **Fully self-hosted** preview — runs Ollama + ChromaDB embedded in a single container
 - Default model: `gemma3:1b` (small, fast, 2 GB pod). Swap to any Ollama-compatible model
-- No data leaves your cluster — competitive with cloud AI assistants without sending your inventory or playbooks anywhere
+- No data leaves your cluster — designed for privacy-first operation
+- Track progress and known limitations in [forge-assistant](https://github.com/forgeplatform/forge-assistant)
 
 ---
 
@@ -157,9 +161,13 @@ Forge's data model is largely compatible with AWX (since it's a fork). A migrati
 - **Production (Kubernetes)**: 3 worker nodes, 8 GB RAM each, plus Postgres + Redis backing services
 - **Reference dev cluster**: [forge-dev-cluster](https://github.com/forgeplatform/forge-dev-cluster) is a 3-server + 4-worker k3s Vagrant setup, ~28 GB RAM total
 
+### Is the AI assistant ready to use?
+
+**Not yet — it is under active development as of the latest release.** The `forge-assistant` is shipped as a preview to gather early feedback; APIs and capabilities may change. Do not use it for production-critical workflows.
+
 ### Does the AI assistant send my data anywhere?
 
-No. The optional `forge-assistant` runs Ollama and ChromaDB embedded in a single container. Models run locally on CPU or GPU. No outbound calls to OpenAI, Anthropic, or any third party.
+No. The optional `forge-assistant` (preview) runs Ollama and ChromaDB embedded in a single container. Models run locally on CPU or GPU. No outbound calls to OpenAI, Anthropic, or any third party — privacy-first by design.
 
 ### What about security disclosure?
 
