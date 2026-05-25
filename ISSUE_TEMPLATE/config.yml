@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/orgs/forgeplatform/discussions
+    about: Ask a question or start a discussion with the community.
+  - name: Documentation
+    url: https://forgeplatform.github.io/
+    about: Read the Forge Platform documentation, install guides, and operator reference.
+  - name: Security report
+    url: https://github.com/forgeplatform/.github/blob/main/SECURITY.md
+    about: For security issues, please do not open a public issue. See SECURITY.md for the disclosure process.

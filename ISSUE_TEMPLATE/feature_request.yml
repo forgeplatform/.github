@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a new capability or improvement for Forge Platform.
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest an improvement. Please describe the use case first — that helps us evaluate the request even if the proposed solution changes.
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Which repo / component would this affect?
+      placeholder: forge-backend, forge-frontend, forge-helm, forge-operator, forge-assistant, forge-deploy, forge-dev-cluster, docs
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      description: What are you trying to accomplish? What is the current friction?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like Forge Platform to do? CLI / API / UI / configuration shape, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing workarounds, related tools, or other approaches you ruled out.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, mockups, links to similar features elsewhere, etc.

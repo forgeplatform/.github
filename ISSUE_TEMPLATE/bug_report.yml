@@ -1,0 +1,85 @@
+name: Bug report
+description: Something in Forge Platform is broken or behaves unexpectedly.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug report. Please fill in the sections below so we can reproduce the issue.
+
+        If this is a security issue, do **not** file it here — see [SECURITY.md](https://github.com/forgeplatform/.github/blob/main/SECURITY.md) for the private disclosure process.
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Which repo / component is affected?
+      placeholder: forge-backend, forge-frontend, forge-helm, forge-operator, forge-assistant, forge-deploy, forge-dev-cluster, docs
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Tag, image digest, or commit SHA of the component.
+      placeholder: e.g. v2026.05.0, ghcr.io/forgeplatform/forge-backend:2026.05.0, or commit abc1234
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment mode
+      options:
+        - Docker Compose (forge-deploy)
+        - Kubernetes (forge-helm)
+        - Local dev (Vagrant / forge-dev-cluster)
+        - Other / not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the unexpected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal numbered steps that reproduce the issue.
+      placeholder: |
+        1. Install ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output
+      description: Paste relevant logs, stack traces, or `kubectl describe` output. Use ``` fences. Redact secrets.
+      render: shell
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Kubernetes distribution + version, Helm chart version, browser (for UI bugs), anything else relevant.
+      placeholder: |
+        - OS: Ubuntu 24.04
+        - Kubernetes: k3s v1.30.4+k3s1
+        - forge-helm chart: 1.0.0 (appVersion 2026.05.0)
+        - Browser: Firefox 132 (UI bugs only)
