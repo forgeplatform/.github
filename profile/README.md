@@ -192,7 +192,3 @@ For bug reports: open an issue on the relevant repository. For security issues: 
 Forge is a modernized fork of [Ansible AWX](https://github.com/ansible/awx) (Apache License 2.0), originally developed by Red Hat and the Ansible community. Full attribution is preserved in [forge-backend/NOTICE](https://github.com/forgeplatform/forge-backend/blob/main/NOTICE).
 
 All Forge Platform repositories are licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-
----
-
-**Search keywords**: open source Ansible automation, AWX alternative, AWX fork, Ansible Tower alternative, Ansible Automation Platform open source, self-hosted CI/CD for Ansible, Kubernetes Ansible operator, GitOps Ansible, DevOps automation platform, infrastructure automation, RBAC Ansible, OpenTelemetry Ansible, OPA Open Policy Agent Ansible, self-hosted AI assistant DevOps, Receptor mesh, declarative Ansible Kubernetes
