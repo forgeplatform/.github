@@ -1,7 +1,7 @@
 # Security Policy
 
 This is the organization-wide security policy for all
-[Forge Platform](https://github.com/forgeplatform) repositories. Individual
+[Forail Platform](https://github.com/forail-platform) repositories. Individual
 repositories may also ship their own `SECURITY.md`; where they do, it takes
 precedence for that repository.
 
@@ -19,11 +19,11 @@ public advisory / CVE is published.
 
 ## Supported versions
 
-Forge ships as a coordinated monthly platform release (CalVer). Security fixes
+Forail ships as a coordinated monthly platform release (CalVer). Security fixes
 target the latest released version. Older versions are best-effort.
 
 ## Scope
 
-In scope: the Forge backend, frontend, operator, Helm chart, deployment
+In scope: the Forail backend, frontend, operator, Helm chart, deployment
 tooling, and the AI assistant. The AI assistant is in preview and not yet
 production-ready — treat findings there as preview-quality.

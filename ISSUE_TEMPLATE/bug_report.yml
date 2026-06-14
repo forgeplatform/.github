@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in Forge Platform is broken or behaves unexpectedly.
+description: Something in Forail Platform is broken or behaves unexpectedly.
 labels: ["bug", "triage"]
 body:
   - type: markdown
@@ -7,14 +7,14 @@ body:
       value: |
         Thanks for filing a bug report. Please fill in the sections below so we can reproduce the issue.
 
-        If this is a security issue, do **not** file it here — see [SECURITY.md](https://github.com/forgeplatform/.github/blob/main/SECURITY.md) for the private disclosure process.
+        If this is a security issue, do **not** file it here — see [SECURITY.md](https://github.com/forail-platform/.github/blob/main/SECURITY.md) for the private disclosure process.
 
   - type: input
     id: component
     attributes:
       label: Component
       description: Which repo / component is affected?
-      placeholder: forge-backend, forge-frontend, forge-helm, forge-operator, forge-assistant, forge-deploy, forge-dev-cluster, docs
+      placeholder: forail-backend, forail-frontend, forail-helm, forail-operator, forail-assistant, forail-deploy, forail-dev-cluster, docs
     validations:
       required: true
 
@@ -23,7 +23,7 @@ body:
     attributes:
       label: Version
       description: Tag, image digest, or commit SHA of the component.
-      placeholder: e.g. v2026.05.0, ghcr.io/forgeplatform/forge-backend:2026.05.0, or commit abc1234
+      placeholder: e.g. v2026.05.0, ghcr.io/forail-platform/forail-backend:2026.05.0, or commit abc1234
     validations:
       required: true
 
@@ -32,9 +32,9 @@ body:
     attributes:
       label: Deployment mode
       options:
-        - Docker Compose (forge-deploy)
-        - Kubernetes (forge-helm)
-        - Local dev (Vagrant / forge-dev-cluster)
+        - Docker Compose (forail-deploy)
+        - Kubernetes (forail-helm)
+        - Local dev (Vagrant / forail-dev-cluster)
         - Other / not applicable
     validations:
       required: true
@@ -81,5 +81,5 @@ body:
       placeholder: |
         - OS: Ubuntu 24.04
         - Kubernetes: k3s v1.30.4+k3s1
-        - forge-helm chart: 1.0.0 (appVersion 2026.05.0)
+        - forail-helm chart: 1.0.0 (appVersion 2026.05.0)
         - Browser: Firefox 132 (UI bugs only)

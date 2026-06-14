@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest a new capability or improvement for Forge Platform.
+description: Suggest a new capability or improvement for Forail Platform.
 labels: ["enhancement", "triage"]
 body:
   - type: markdown
@@ -12,7 +12,7 @@ body:
     attributes:
       label: Component
       description: Which repo / component would this affect?
-      placeholder: forge-backend, forge-frontend, forge-helm, forge-operator, forge-assistant, forge-deploy, forge-dev-cluster, docs
+      placeholder: forail-backend, forail-frontend, forail-helm, forail-operator, forail-assistant, forail-deploy, forail-dev-cluster, docs
     validations:
       required: true
 
@@ -28,7 +28,7 @@ body:
     id: proposal
     attributes:
       label: Proposed solution
-      description: What would you like Forge Platform to do? CLI / API / UI / configuration shape, etc.
+      description: What would you like Forail Platform to do? CLI / API / UI / configuration shape, etc.
     validations:
       required: true
 

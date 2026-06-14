@@ -1,5 +1,5 @@
 <!--
-Thanks for contributing to Forge Platform!
+Thanks for contributing to Forail Platform!
 Please fill in the sections below so reviewers have the context they need.
 -->
 

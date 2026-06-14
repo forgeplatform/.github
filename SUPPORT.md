@@ -1,13 +1,13 @@
 # Support
 
-Need help with [Forge Platform](https://github.com/forgeplatform)? Here is
+Need help with [Forail Platform](https://github.com/forail-platform)? Here is
 where to look.
 
 ## Documentation
 
-- User & deployment docs: <https://forgeplatform.github.io/>
+- User & deployment docs: <https://forail-platform.github.io/>
 - Admin handbook and release notes live in the
-  [forge-devops](https://github.com/forgeplatform/forge-devops) repository.
+  [forail-devops](https://github.com/forail-platform/forail-devops) repository.
 
 ## Questions and discussion
 

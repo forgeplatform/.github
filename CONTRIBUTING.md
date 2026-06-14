@@ -1,14 +1,14 @@
-# Contributing to Forge Platform
+# Contributing to Forail Platform
 
 This is the organization-wide entry point for contributing to any
-[Forge Platform](https://github.com/forgeplatform) repository.
+[Forail Platform](https://github.com/forail-platform) repository.
 
 ## Where to start
 
 - Read the **centralized contributing guide** for git workflow, commit
   conventions, and the PR process:
-  <https://github.com/forgeplatform/forge-devops/blob/main/docs/10-contributing-guide.md>
-- Browse the docs: <https://forgeplatform.github.io/>
+  <https://github.com/forail-platform/forail-devops/blob/main/docs/10-contributing-guide.md>
+- Browse the docs: <https://forail-platform.github.io/>
 
 ## Quick rules
 
