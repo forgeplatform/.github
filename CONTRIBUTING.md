@@ -7,7 +7,7 @@ This is the organization-wide entry point for contributing to any
 
 - Read the **centralized contributing guide** for git workflow, commit
   conventions, and the PR process:
-  <https://github.com/forail-platform/forail-devops/blob/main/docs/10-contributing-guide.md>
+  <https://forail-platform.github.io/dev/contributing.html>
 - Browse the docs: <https://forail-platform.github.io/>
 
 ## Quick rules
